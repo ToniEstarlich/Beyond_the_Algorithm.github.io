@@ -8,6 +8,7 @@ This is a simple full-stack blog application that allows users to toggle between
 3. [Algorithm Breakdown](#algorithm-breakdown)
 4. [How to Run the Project](#how-to-run-the-project)
 5. [Future Enhancements](#future-enhancements)
+6. [How the Code Works](#how-the-code-works)
 
 ---
 
@@ -191,7 +192,6 @@ function toggleDarkMode() {
 
 ```
 ### 5. **index.html** (Main HTML Structure)
-
 The `index.html` file is the entry point of the web app. It defines the structure and layout of the webpage. It includes placeholders for the blog content, such as a container for posts (`id="posts-container"`) and buttons for language and dark mode toggling. The file links to `style.css` for styling and `JS/main.js` for JavaScript logic.
 
 **Key Code:**
