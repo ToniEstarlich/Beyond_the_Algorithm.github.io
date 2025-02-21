@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="/path/to/favicon.ico" />
     <title>Blog</title>
 </head>
+
 <body>
     <div class="header">
         <h2 id="blog-title">Beyond the Algorithm</h2>
@@ -17,16 +20,14 @@
     <div class="row">
         <div class="leftcolumn">
             <div class="card">
-                <h2 id="post-title-1">TITLE HEADING</h2>
-                <h5 id="post-date-1">Title description, Dec 7, 2017</h5>
-                <div class="img" style="height: 200px; background: #aaa;">Image</div>
-                <p id="post-content-1">Some text...</p>
+                <div id="post-container"></div>  <!-- Container for the posts -->
             </div>
         </div>
         <div class="rightcolumn">
             <div class="card">
                 <h2 id="aboout-me">About Me</h2>
-                <p id="about-text">Spanish tech enthusiast living in the UK, passionate about AI and web development.</p>
+                <p id="about-text">Spanish tech enthusiast living in the UK, passionate about AI and web development.
+                </p>
             </div>
         </div>
     </div>
@@ -35,41 +36,9 @@
         <h2 id="footer-text">Footer</h2>
     </div>
 
-    <script>
-        // Funtion Dark mode
-        function toggleDarkMode() {
-            document.body.classList.toggle("dark-mode");
-        }
-
-        const translations = {
-            en: {
-                "blog-title": "Beyond the Algorithm",
-                "post-title-1": "TITLE HEADING",
-                "post-date-1": "Title description, 2025",
-                "post-content-1": "Some text...",
-                "about-me": "About Me",
-                "about-text": "Spanish tech enthusiast living in the UK, passionate about AI and web development.",
-                "footer-text": "Footer"
-            },
-
-            es: {
-                "blog-title": "Más allá de Algoritmo",
-                "post-title-1": "TITULO PRINCIPAL",
-                "post-date-1": "Descripción del título, 2025",
-                "post-content-1": "Algun texto...",
-                "about-me": "Sobre Mi",
-                "about-text": "Entusiasta de la tecnología en el Reino Unido, apasionado por la IA y el desarrollo web.",
-                "footer-text": "Pie de página"
-            }
-        };
-
-        function changeLanguage(lang) {
-          document.querySelectorAll("[id]").forEach(el => {
-            if (translations[lang][el.id]) {
-             el.innerText = translations[lang][el.id];
-             }
-          });
-        }
-    </script>
+    <!--Javascript functions-->
+    <script src="./JS/main.js"></script>
+    <script src="./components/posts.js"></script>
 </body>
+
 </html>

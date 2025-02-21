@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Post 1 Title",
+      "date": "February 2025",
+      "image": "image1.jpg",
+      "content": "This is the content for Post 1."
+    },
+    {
+      "title": "Post 2 Title",
+      "date": "February 2025",
+      "image": "image2.jpg",
+      "content": "This is the content for Post 2."
+    },
+    {
+      "title": "Post 3 Title",
+      "date": "February 2025",
+      "image": "image3.jpg",
+      "content": "This is the content for Post 3."
+    }
+  ]
+  
